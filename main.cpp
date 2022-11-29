@@ -1,10 +1,13 @@
 #include <iostream>
 #include <string>
 #include "Persona.h"
+#include "Empleado.h"
 
 using namespace std;
 
 int main() {
+
+    string Puesto;
 
     Persona cuenta;
     
@@ -19,13 +22,16 @@ int main() {
     cout << "Ingrese su edad: "; cin >> edad;
     cuenta.setAge(edad);
 
-    cout << "Ingrese su género: "; cin >> genero;
+    cout << "Ingrese su género: ";
+    getline(cin, genero);
     cuenta.setGender(genero);
 
     cout << "El nombre de la cuenta es: " << cuenta.getName() << endl;
     cout << "La edad ingresada es: " << cuenta.getAge() << endl;
-    cout << "El género ingresado es: " << cuenta.getGender();
-    
+    cout << "El género ingresado es: " << cuenta.getGender() << endl;
+
+    cout << "Indique si es empleado o jefe: " << endl;
+
     return 0;
 
 }

@@ -1,5 +1,7 @@
-#include <string>
+#ifndef PERSONA_H
+#define PERSONA_H
 
+#include <string>
 using namespace std;
 
 class Persona {
@@ -10,8 +12,7 @@ class Persona {
         string gender;
 
     public:
-
-    void setName(string accName){
+        void setName(string accName){
 
             name = accName;
         }
@@ -43,3 +44,4 @@ class Persona {
     }
         
 };
+#endif
